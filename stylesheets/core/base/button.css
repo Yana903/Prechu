@@ -1,0 +1,87 @@
+:root {
+  --button-color: #fff;
+  --button-background: #5094f2;
+  --button-font-family: inherit;
+  --button-font-size: var(--global-font-size);
+  --button-font-weight: normal;
+  --button-padding: 8px 10px;
+  --button-height: var(--global-control-height);
+
+  --button-color-hover: #fff;
+  --button-background-hover: #2f80ef;
+
+  --button-color-focus: #fff;
+  --button-background-focus: #146fed;
+
+  --button-color-active: #fff;
+  --button-background-active: #146fed;
+}
+
+a:focus, a:active, 
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+select::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {
+    border: 0;
+    outline : 0;
+}
+
+button,
+input[type="button"],
+input[type="submit"],
+.button {
+  margin: 0;
+  position: relative;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  user-select: none;
+  border-radius: 0;
+  overflow: visible;
+  font: inherit;
+  text-transform: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--button-padding);
+  font-family: var(--button-font-family);
+  font-size: var(--button-font-size);
+  min-height: var(--button-height);
+  text-decoration: none;
+  background: var(--button-background);
+  color: var(--button-color);
+}
+
+.button:not(:disabled) {
+  cursor: pointer
+}
+
+.button::-moz-focus-inner {
+  border: 0;
+  padding: 0
+}
+
+.button:hover {
+  text-decoration: none;
+  background: var(--button-background-hover);
+  color: var(--button-color-hover);
+}
+
+.button:focus {
+  outline: none;
+  background: var(--button-background-focus);
+  color: var(--button-color-focus);
+}
+
+.button:active,
+.button.is-active {
+  background: var(--button-background-active);
+  color: var(--button-color-active);
+}
+
+.button:disabled {
+  pointer-events: none;
+  opacity: 0.45;
+}

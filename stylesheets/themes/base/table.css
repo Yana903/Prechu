@@ -1,0 +1,16 @@
+/* Tables */
+
+/* ================================= */
+
+table {
+  font-size: 11px;
+}
+
+table thead th {
+  color: #7d7d7d;
+  font-weight: normal;
+}
+
+table tbody tr:nth-child(odd) td {
+  background-color: #ececec;
+}

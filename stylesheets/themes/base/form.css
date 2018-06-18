@@ -1,0 +1,56 @@
+
+/* Forms */
+
+/* ================================= */
+
+input:not([type]),
+input[type=date],
+input[type=datetime-local],
+input[type=email],
+input[type=file],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type="month"],
+input[type=week],
+input[type=text],
+input[type=time],
+input[type=url],
+textarea,
+select {
+  border-radius: 4px;
+  border: solid 1px #c8c8c8;
+}
+
+input:not([type]):focus,
+input[type=date]:focus,
+input[type=datetime-local]:focus,
+input[type=email]:focus,
+input[type=file]:focus,
+input[type=number]:focus,
+input[type=password]:focus,
+input[type=search]:focus,
+input[type=tel]:focus,
+input[type="month"]:focus,
+input[type=week]:focus,
+input[type=text]:focus,
+input[type=time]:focus,
+input[type=url]:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--global-primary-background);
+}
+
+.field-icon {
+  padding: 0;
+  background: none;
+}
+
+.field-icon:hover {
+-webkit-transform:scale(1.5); /* Safari and Chrome */
+-moz-transform:scale(1.5); /* Firefox */
+-ms-transform:scale(1.5); /* IE 9 */
+-o-transform:scale(1.5); /* Opera */
+ transform:scale(1.5);
+ }
